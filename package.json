@@ -1,11 +1,14 @@
 {
+  "homepage": "https://osijonah.github.io/react-meetup-site",
   "name": "parcel-react-client-starter",
   "private": true,
   "version": "0.0.0",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.14.0"
   },
   "@parcel/resolver-default": {
